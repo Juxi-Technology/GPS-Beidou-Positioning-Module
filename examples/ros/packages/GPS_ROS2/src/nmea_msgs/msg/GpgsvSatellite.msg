@@ -1,0 +1,7 @@
+uint8 prn
+
+uint8 elevation
+
+uint16 azimuth
+
+int8 snr

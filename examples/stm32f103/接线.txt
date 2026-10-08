@@ -1,0 +1,10 @@
+接线说明
+STM32			GPS
+VCC		------>	VCC
+GND		------>	GND
+PA10  <------	TXD
+
+
+STM32			TTL
+GND		------>	GND
+PA9		------>	RXD

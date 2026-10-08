@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>nmea_navsat_driver</name>
+  <version>0.5.0</version>
+  <description>
+    Package to parse NMEA strings and publish a very simple GPS message. Does not
+    require or use the GPSD deamon. ROS2 version.
+  </description>
+
+  <maintainer email="evenator@gmail.com">Ed Venator</maintainer>
+
+  <license>BSD</license>
+
+  <url type="website">http://ros.org/wiki/nmea_navsat_driver</url>
+
+  <author email="eric@ericperko.com">Eric Perko</author>
+  <author>Steven Martin</author>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>nmea_msgs</depend>
+  <depend>tf_transformations</depend>
+
+  <exec_depend>python3-serial</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

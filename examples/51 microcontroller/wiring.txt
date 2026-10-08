@@ -1,0 +1,4 @@
+VCC ---> 5V
+GND ---> GND
+TXD ---> RXD(P3.0)
+RXD(不接)

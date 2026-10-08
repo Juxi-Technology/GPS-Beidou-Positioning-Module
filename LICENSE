@@ -1,0 +1,36 @@
+Copyright (c) 2026 Juxi Technology. All rights reserved.
+
+This repository and its contents — including the documentation, sample
+code and other materials written by Juxi Technology — are the property
+of Juxi Technology and are protected by copyright law.
+
+No part of this repository may be reproduced, distributed, modified,
+published, or used in derivative works without the prior written
+permission of Juxi Technology, except as expressly permitted below.
+
+PERMITTED USE
+-------------
+You may view this repository and use the sample code for the purpose of
+evaluating and operating the GPS / BeiDou positioning module sold by
+Juxi Technology.
+
+THIRD-PARTY MATERIALS
+---------------------
+This repository also contains material owned by third parties, which is
+NOT covered by the notice above:
+
+  * ATGM336H-5N datasheet and user manual       (docs/datasheets/)
+  * CASIC multi-mode satellite navigation
+    receiver protocol specification              (docs/datasheets/)
+  * GnssToolKit3 host tool                       (tools/pc-gnss-toolkit/)
+
+Those files remain under their respective owners' terms and are included
+for reference only.
+
+NO WARRANTY
+-----------
+THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL JUXI TECHNOLOGY BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY ARISING FROM THE USE OF THESE MATERIALS.
