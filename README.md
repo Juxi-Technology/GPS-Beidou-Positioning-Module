@@ -4,23 +4,52 @@ English | [简体中文](README_CN.md)
 
 A high-performance BDS/GNSS positioning and navigation module built on the **ATGM336H-5N**. It receives BeiDou-2, BeiDou-3, GPS, GLONASS and QZSS simultaneously for combined positioning, navigation and timing — high sensitivity, low power, low cost.
 
-This repository collects the module documentation, wiring notes and ready-to-run sample code for each supported platform, in both English and Simplified Chinese.
+This repository collects the module documentation, wiring notes and ready-to-run sample code for each supported platform, in 11 languages.
 
 ## 📦 Repository layout
 
 | Path | Contents |
 |------|----------|
-| `docs/` | Module overview and the [datasheets](docs/datasheets) (ATGM336H-5N datasheet and user manual, CASIC protocol specification) |
-| `examples/51 microcontroller/` | STC89C52RC example: parse the NMEA stream and print position data over UART |
-| `examples/arduino/` | Arduino UNO examples: [reading position data](examples/arduino/position-read) and [parsing it](examples/arduino/position-parse) |
-| `examples/stm32f103/` | STM32F103C8T6 example: parse and output position data, including the degrees-minutes conversion |
-| `examples/jetson-nano/` | Jetson example: read and parse position data, plus [AGNSS-assisted positioning](examples/jetson-nano/agnss) for weak-signal environments |
-| `examples/raspberry-pi/` | Raspberry Pi examples: same two tutorials as above |
-| `examples/ros/` | ROS 2 tutorials (build, read data, plot a track, fuse IMU + GPS, GPS + Nav2) and the [package source](examples/ros/packages) |
+| `docs/<lang>/` | Tutorials — the same 15-stage set in each language tree. Images are stored only under `docs/en/`; every other language links to them. |
+| `docs/datasheets/` | Vendor documents: [ATGM336H-5N](docs/datasheets) datasheet and user manual, CASIC protocol specification |
+| `examples/` | Source code per platform — `51 microcontroller/`, `arduino/`, `stm32f103/`, `jetson-nano/`, `raspberry-pi/`, `ros/` |
 | `tools/pc-gnss-toolkit/` | Windows host tool for verifying the module |
-| `troubleshooting/` | [Map positioning error](troubleshooting/map-position-error): why coordinates are offset on Amap / Baidu Maps, and how to convert them |
 
-Every tutorial exists in two versions and they link to each other — `*.md` is English, `*_CN.md` is Simplified Chinese.
+| Language | Folder |
+|----------|--------|
+| English | [`docs/en/`](docs/en/) |
+| Deutsch | [`docs/de/`](docs/de/) |
+| Español | [`docs/es/`](docs/es/) |
+| Français | [`docs/fr/`](docs/fr/) |
+| Italiano | [`docs/it/`](docs/it/) |
+| 日本語 | [`docs/ja/`](docs/ja/) |
+| 한국어 | [`docs/ko/`](docs/ko/) |
+| Português (BR) | [`docs/pt-br/`](docs/pt-br/) |
+| Português (PT) | [`docs/pt-pt/`](docs/pt-pt/) |
+| 简体中文 | [`docs/zh-hans/`](docs/zh-hans/) |
+| 繁體中文 | [`docs/zh-hant/`](docs/zh-hant/) |
+
+### Tutorials
+
+| Stage | English | 简体中文 |
+|-------|---------|----------|
+| 01 Module overview | [overview](docs/en/01-overview/overview.md) | [概述](docs/zh-hans/01-overview/overview.md) |
+| 02 51 microcontroller | [gps-data-parsing](docs/en/02-51-microcontroller/gps-data-parsing.md) | [GPS 数据解析](docs/zh-hans/02-51-microcontroller/gps-data-parsing.md) |
+| 03 Arduino — reading | [position-read](docs/en/03-arduino-position-read/position-read.md) | [读取位置信息](docs/zh-hans/03-arduino-position-read/position-read.md) |
+| 04 Arduino — parsing | [position-parse](docs/en/04-arduino-position-parse/position-parse.md) | [解析位置信息](docs/zh-hans/04-arduino-position-parse/position-parse.md) |
+| 05 STM32F103 | [gps-parse-output](docs/en/05-stm32f103/gps-parse-output.md) | [GPS 解析输出](docs/zh-hans/05-stm32f103/gps-parse-output.md) |
+| 06 Jetson — parsing | [position-parse](docs/en/06-jetson-nano-position-parse/position-parse.md) | [解析位置信息](docs/zh-hans/06-jetson-nano-position-parse/position-parse.md) |
+| 07 Jetson — AGNSS | [agnss](docs/en/07-jetson-nano-agnss/agnss.md) · [Baidu key](docs/en/07-jetson-nano-agnss/baidu-map-api-key.md) | [AGNSS](docs/zh-hans/07-jetson-nano-agnss/agnss.md) · [百度 AK](docs/zh-hans/07-jetson-nano-agnss/baidu-map-api-key.md) |
+| 08 Raspberry Pi — parsing | [position-parse](docs/en/08-raspberry-pi-position-parse/position-parse.md) | [解析位置信息](docs/zh-hans/08-raspberry-pi-position-parse/position-parse.md) |
+| 09 Raspberry Pi — AGNSS | [agnss](docs/en/09-raspberry-pi-agnss/agnss.md) · [Baidu key](docs/en/09-raspberry-pi-agnss/baidu-map-api-key.md) | [AGNSS](docs/zh-hans/09-raspberry-pi-agnss/agnss.md) · [百度 AK](docs/zh-hans/09-raspberry-pi-agnss/baidu-map-api-key.md) |
+| 10 ROS 2 — preparation | [01-preparation](docs/en/10-ros-preparation/01-preparation.md) | [使用前准备](docs/zh-hans/10-ros-preparation/01-preparation.md) |
+| 11 ROS 2 — reading data | [02-read-gps-data](docs/en/11-ros-read-gps-data/02-read-gps-data.md) | [读取 GPS 数据](docs/zh-hans/11-ros-read-gps-data/02-read-gps-data.md) |
+| 12 ROS 2 — plotting a track | [03-plot-gps-track](docs/en/12-ros-plot-gps-track/03-plot-gps-track.md) | [绘制 GPS 轨迹](docs/zh-hans/12-ros-plot-gps-track/03-plot-gps-track.md) |
+| 13 ROS 2 — IMU + GPS fusion | [04-imu-gps-fusion](docs/en/13-ros-imu-gps-fusion/04-imu-gps-fusion.md) | [融合 IMU 和 GPS](docs/zh-hans/13-ros-imu-gps-fusion/04-imu-gps-fusion.md) |
+| 14 ROS 2 — Nav2 | [05-gps-nav2](docs/en/14-ros-nav2/05-gps-nav2.md) | [GPS 与 Nav2](docs/zh-hans/14-ros-nav2/05-gps-nav2.md) |
+| 15 Map positioning error | [map-position-error](docs/en/15-map-position-error/map-position-error.md) | [地图定位误差](docs/zh-hans/15-map-position-error/map-position-error.md) |
+
+Every page carries a language switcher at the top — use it to move between the English and Chinese version of the same stage.
 
 ## 🔌 Quick start
 
@@ -43,7 +72,7 @@ Keep the antenna outdoors — the module may not acquire a fix indoors.
 | Power consumption | 25 mA @ 3.3 V (continuous) |
 | A-GNSS | Supported |
 
-See [docs/overview.md](docs/overview.md) for the full list.
+See [the module overview](docs/en/01-overview/overview.md) for the full list.
 
 ## 📄 License
 

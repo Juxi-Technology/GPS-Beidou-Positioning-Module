@@ -1,0 +1,33 @@
+[English](../../en/01-overview/overview.md) | [Deutsch](../../de/01-overview/overview.md) | [Español](../../es/01-overview/overview.md) | [Français](../../fr/01-overview/overview.md) | [Italiano](../../it/01-overview/overview.md) | [日本語](../../ja/01-overview/overview.md) | [한국어](../../ko/01-overview/overview.md) | [Português (BR)](../../pt-br/01-overview/overview.md) | [Português (PT)](../../pt-pt/01-overview/overview.md) | 简体中文 | [繁體中文](../../zh-hant/01-overview/overview.md)
+
+# <center>GPS模块资料</center>
+
+​		GPS模块是基于ATGM336H-5N的高性能BDS/GNSS 定位导航模块。模块支持多种卫星导航系统，包括中国的北斗二号和北斗三号全部卫星，美国的GPS，俄罗斯的GLONASS，日本的QZSS，可以同时接收以上卫星导航系统的卫星信号，并且实现联合定位、导航与授时，模块具有高灵敏度、低功耗、低成本等优势，适用于车载导航、手持定位、可穿戴设备。
+
+**一、模块特点：**
+
+- 支持北斗二号和北斗三号1~63 号全部卫星
+
+- 支持BDS/GPS/QZSS 卫星导航系统的单系统定位，以及任意组合的多系统联合定位。
+
+- 支持A-GNSS
+
+- 冷启动捕获灵敏度：-148dBm
+
+- 跟踪灵敏度：-162dBm
+
+- 定位精度：2.5 米（CEP50）
+
+- 首次定位时间：32 秒
+
+- 低功耗：连续运行25mA@3.3V
+
+- 内置天线检测及天线短路保护功能
+
+**二、GPS模块接口说明：**
+
+![img](../../en/01-overview/images/1.png)
+
+**三、通讯协议**
+
+详细通讯协议查阅 `../../datasheets/CASIC-GNSS-protocol-spec-CN.pdf` 。
